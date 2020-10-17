@@ -13,6 +13,8 @@ namespace Domain
         private readonly HourCalculator _hourCalculator;
         public Employee()
         {
+            // Vil man seperere domæne "opførsels loggikken" fra domæne data strukturene?
+            
             _employeeSaver = new EmployeeSaver();
             _hourCalculator = new HourCalculator();
         }
